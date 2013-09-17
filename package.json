@@ -1,0 +1,34 @@
+{
+  "name": "jasmine-before-all",
+  "version": "0.0.1",
+  "description": "Adds a done-friendly beforeAll setup to jasmine",
+  "homepage": "https://github.com/testdouble/jasmine-before-all",
+  "author": {
+    "name": "Justin Searls",
+    "company": "Test Double, LLC"
+  },
+  "main": "main.js",
+  "dependencies": {
+    "coffee-script": "~ 1.6.3"
+  },
+  "devDependencies": {
+    "lineman": ">=0.11.0"
+  },
+  "keywords": [
+    "jasmine",
+    "bdd"
+  ],
+  "bugs": {
+    "web": "https://github.com/testdouble/jasmine-before-all/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/testdouble/jasmine-before-all.git"
+  },
+  "licenses": [
+    {
+      "name": "Apache License 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ]
+}
