@@ -7,7 +7,7 @@
       if itsBeenDoneBefore
         done() if typeof done == "function"
       else
-        doBeforeAll(done)
+        doBeforeAll.call(jasmine.getEnv().currentSpec, done)
         itsBeenDoneBefore = true
 
   doneWrapperFor = (func, toWrap) ->
