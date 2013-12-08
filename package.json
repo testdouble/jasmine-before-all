@@ -1,6 +1,6 @@
 {
   "name": "jasmine-before-all",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Adds a done-friendly beforeAll setup to jasmine",
   "homepage": "https://github.com/testdouble/jasmine-before-all",
   "author": {
