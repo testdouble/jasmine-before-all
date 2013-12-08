@@ -19,7 +19,7 @@
     "bdd"
   ],
   "bugs": {
-    "web": "https://github.com/testdouble/jasmine-before-all/issues"
+    "url": "https://github.com/testdouble/jasmine-before-all/issues"
   },
   "repository": {
     "type": "git",
