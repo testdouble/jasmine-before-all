@@ -13,21 +13,17 @@ describe 'jasmine-before-all', ->
     context '3', ->
       Then -> foo == 1
 
-  xdescribe '(asynchronous) intentional pollution', ->
-    async = new AsyncSpec(this)
+    afterAll -> foo++; expect(foo).toEqual(2)
 
-    bar = 3
-    async.beforeAll (done) ->
-      setTimeout ->
-        bar -= 1
-        done()
-      , 100
+  describe "exploding occurring when afterAll is called twice", ->
+    callCount = 0
+    afterAll ->
+      callCount++
+      expect(callCount).toEqual(1)
 
-    context '1', ->
-      Then -> bar == 2
+    Then -> true
+    Then -> true
 
-    context '2', ->
-      Then -> bar == 2
-
-    context '3', ->
-      Then -> bar == 2
+    describe "foo", ->
+      Then -> true
+      Then -> true

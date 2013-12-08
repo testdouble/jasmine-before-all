@@ -2,9 +2,11 @@
 
 [![Build Status](https://travis-ci.org/testdouble/jasmine-before-all.png?branch=master)](https://travis-ci.org/testdouble/jasmine-before-all)
 
-jasmine-before-all is a standalone plugin that you can load *after* jasmine that adds a global `beforeAll` function that calls `beforeEach` at most one time per callback definition and most importantly plays nicely with `done` mechanisms like those found in [minijasminenode](https://github.com/juliemr/minijasminenode).
+jasmine-before-all is a standalone plugin that you can load *after* jasmine that adds global `beforeAll` and `afterAll` functions that call `beforeEach` and `afterEach`, respectively, at most one time per callback definition.
 
-Using a `beforeAll` is typically a *bad idea* for unit tests, but if you're using Jasmine for integration tests, it'll probably come in handy as soon as your setup becomes expensive.
+Importantly, they play nicely with `done` mechanisms like those found in [minijasminenode](https://github.com/juliemr/minijasminenode).
+
+Using `beforeAll`/`afterAll` is typically a *bad idea* for unit tests, but if you're using Jasmine for integration tests, it'll probably come in handy as soon as your setup becomes expensive.
 
 **[Download the latest version here](https://github.com/testdouble/jasmine-before-all/releases)**.
 
@@ -25,6 +27,8 @@ describe 'intentional pollution', ->
 
   context '3', ->
     Then -> foo == 1
+
+  afterAll -> foo++; expect(foo).toEqual(2)
 ```
 
 And if your test runner includes a "done" callback (or you've included one as a helper), this should also work:
