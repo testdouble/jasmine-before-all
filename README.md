@@ -1,3 +1,5 @@
+**WARNING: This plugin relies on internal Jasmine code that was refactored or removed in Jasmine 2.0. Currently compatible with Jasmine 1.x only**
+
 # jasmine-before-all
 
 [![Build Status](https://travis-ci.org/testdouble/jasmine-before-all.png?branch=master)](https://travis-ci.org/testdouble/jasmine-before-all)
