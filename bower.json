@@ -1,6 +1,6 @@
 {
   "name": "jasmine-before-all",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/jasmine-before-all.js",
   "ignore": [
     "app",
