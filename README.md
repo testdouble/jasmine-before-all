@@ -2,7 +2,7 @@
 
 # jasmine-before-all
 
-[![Build Status](https://travis-ci.org/testdouble/jasmine-before-all.png?branch=master)](https://travis-ci.org/testdouble/jasmine-before-all)
+[![Build Status](https://travis-ci.org/testdouble/jasmine-before-all.png?branch=main)](https://travis-ci.org/testdouble/jasmine-before-all)
 
 jasmine-before-all is a standalone plugin that you can load *after* jasmine that adds global `beforeAll` and `afterAll` functions that call `beforeEach` and `afterEach`, respectively, at most one time per callback definition.
 
